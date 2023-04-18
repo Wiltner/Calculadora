@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+<head>
+  <title> CALCULADORA</title>               
+    <link href="style.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+ </head>
+  <body>
+    <h1> CALCULADORA</h1>
+    <div id= "conteudo_calculadora">
+      <div id="conteudo_visor">
+       <input type="text" id="visor">
+       </input>
+         <div class="conteudo_numeros">           
+           <button class="botao" onclick="adicionaValorVisor(1);">1</button>
+           <button class="botao" onclick="adicionaValorVisor(2);">2</button>
+           <button class="botao" onclick="adicionaValorVisor(3);">3</button>
+         <div class="conteudo_numeros">  
+           <button class="botao" onclick="adicionaValorVisor(4);">4</button>
+           <button class="botao" onclick="adicionaValorVisor(5);">5</button>
+           <button class="botao" onclick="adicionaValorVisor(6);">6</button>
+         <div class="conteudo_numeros">  
+           <button class="botao" onclick="adicionaValorVisor(7);">7</button>
+           <button class="botao" onclick="adicionaValorVisor(8);">8</button>
+           <button class="botao" onclick="adicionaValorVisor(9);">9</button>
+         <div class="conteudo_numeros">  
+           <button class="botao" onclick="adicionaValorVisor(0);">0</button>          
+           <button class="botao" onclick="adicionaValorVisor('.');">.</button>
+          </div>
+          <div id="conteudo_operacoes">
+           <button class="botao" onclick="adicionaValorVisor('-');">-</button>
+           <button class="botao" onclick="adicionaValorVisor('+');">+</button>
+           <button class="botao" onclick="adicionaValorVisor('/');">/</button>
+           <button class="botao" onclick="adicionaValorVisor('*');">*</button>
+          </div>
+          <div id="conteudo_acoes"> 
+           <button class="botao" onclick="calcular();">=</button>
+           <button class="botao" onclick="limpar();">Del</button>
+         </div>
+         <div id="conteudo_log"></div>         
+      </div>                        
+    </div>
+    <script src="calculadora.js"></script>
+  </body>
+</html>
